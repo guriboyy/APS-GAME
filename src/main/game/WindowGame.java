@@ -6,10 +6,13 @@ import java.awt.*;
 public class WindowGame extends JFrame {
     public WindowGame(){
         setTitle("Recycle Rush");
-        setVisible(true);
-        setMinimumSize(new Dimension(1400, 800));
-        setExtendedState(MAXIMIZED_BOTH);
+        setResizable(false);
+        setSize(1223,880);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        add(new BackgroundGame());
+        setLocationRelativeTo(null);
+        //add(new BackgroundGame());
+        GamePanel gamePanel = new GamePanel();
+        add(gamePanel);
+        setVisible(true);
     }
 }

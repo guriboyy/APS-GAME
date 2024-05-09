@@ -7,7 +7,7 @@ public class Backgroung extends JPanel {
     private Image image;
 
     public Backgroung(){
-        ImageIcon referencia = new ImageIcon("assets\\bg-firstpage.png");
+        ImageIcon referencia = new ImageIcon("assets\\initial_background.png");
         image = referencia.getImage();
     }
 
